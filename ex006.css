@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*DELIMITANDO A CABEÇA DO SITE*/
+header{
+    width: 100%;
+    height: 100px;
+}
+/*FORMATAÇÃO DO MENU*/
+nav#menu{
+    display: block; /*EXIBIR COMO BLOCO*/
+}
+nav#menu ul{
+    position: absolute; /*OBJETO SOLTO PELA PAGINA*/
+    top: -20px; /*DISTANCIA DO TOPO*/
+    left: 50px; /*DISTANCIA DA ESQUERDA*/
+    list-style: none; /*REMOVER MARCAÇÃO DA LISTA*/
+    text-transform: uppercase; /*TUDO EM MAIUSCULO*/
+}
+nav#menu li{
+    display: inline-block; /*POR LISTA EM LINHA*/
+    background-color: black;
+    padding: 10px; /*MARGEM DE DENTRO*/
+    margin: 5px; /*MARGEM DE FORA*/
+}
+nav#menu h1{
+    display: none; /*ESCONDER*/
+}
+nav#menu a{
+    color: white;
+    text-decoration: none; /*REMOVER SUBLINHADO*/
+}
