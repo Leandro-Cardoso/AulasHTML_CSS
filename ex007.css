@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@font-face{ /*DECLARAÇÃO DE FONTE*/
+    font-family: 'assinatura';
+    src: url("fonts/signature.ttf");
+}
+@font-face{
+    font-family: 'principal';
+    src: url("fonts/TitilliumWeb-Regular.ttf");
+}
+body{
+    margin: 10px;
+    font: normal 15pt Arial;
+    background: url(imagens/fundo.jpg);
+    font-family: 'principal';
+}
+header{
+    width: 100%;
+    height: 150px;
+}
+section{
+    background-color: white;
+    width: 75%;
+    margin: 0px auto 0px auto; /*CENTRALIZANDO*/
+    padding: 20px; /*CIMA ESQUERDA BAIXO DIREITA*/
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .5); /*SOMBRA*/
+    border-radius: 10px; /*BORDA ARREDONDADA*/
+}
+section p{
+    text-indent: 50px;
+    text-align: justify;
+    margin: 0px;
+}
+section h1{
+    text-align: center;
+    border-bottom: 1px black solid; /*POR BORDA EMBAIXO*/
+    margin: 10px;
+}
+section h2{
+    color: rgb(109, 109, 109);
+    font-size: 25px;
+    margin: 10px;
+}
+footer h1{
+    text-align: center;
+    font-size: 20px;
+}
+footer h1 span{
+    font-family: 'assinatura'; /*MUDANDO FONTE*/
+    font-size: 40px;
+}
+/*MENU*/
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
+    transition: background-color .7s; /*TRANSIÇÃO DE COR*/
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: white;
+    text-decoration: none;
+}
+/*MENU -> AÇÕES DO MOUSE*/
+nav#menu li:hover{
+    background-color: goldenrod;
+}
+nav#menu a:hover{
+    color: black;
+}
