@@ -10,3 +10,4 @@ Aulas e exercícios de HTML e CSS... Oque mudou no HTML 5 e CSS 3 ?
 6. ex006.html -> Formatação CSS do menu.
 7. ex007.html -> Interface e fontes.
 8. ex008.html -> Section, article e aside.
+9. ex009.html -> Tabelas.
