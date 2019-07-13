@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Exercício 010
+    </title>
+    <link rel="stylesheet" type="text/css" href="ex010.css">
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <h1>Menu principal</h1>
+            <ul>
+                <li><a href="ex001.html" target="_blank">Exercício 001</a></li>
+                <li><a href="ex002.html" target="_blank">Exercício 002</a></li>
+                <li><a href="ex003.html" target="_blank">Exercício 003</a></li>
+                <li><a href="ex004.html" target="_blank">Exercício 004</a></li>
+                <li><a href="ex005.html" target="_blank">Exercício 005</a></li>
+                <li><a href="ex006.html" target="_blank">Exercício 006</a></li>
+                <li><a href="ex007.html" target="_blank">Exercício 007</a></li>
+                <li><a href="ex008.html" target="_blank">Exercício 008</a></li>
+                <li><a href="ex009.html" target="_blank">Exercício 009</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Documentos adicionais</h1>
+        <ul>
+            <li><a href="ex010a.html#primeiro" target="janela">Primeiro artigo</a></li>
+            <li><a href="ex010a.html#segundo" target="janela">Segundo artigo</a></li>
+            <li><a href="ex010a.html#terceiro" target="janela">Terceiro artigo</a></li>
+        </ul>
+        <img src="imagens/imgMap.png" alt="Teste de mapa de imagem" usemap="#mapa"> <!--IMAGEM DO MAPA-->
+        <map name="mapa"> <!--MAPA DE IMAGEM-->
+            <area shape="rect" coords="15, 55, 94, 15" href="ex010a.html#primeiro" target="janela" alt="Quadrado">
+            <area shape="circle" coords="187, 56, 35" href="ex010a.html#segundo" target="janela" alt="Circulo">
+            <area shape="poly" coords="82, 105, 107, 79, 143, 87, 153, 121, 129, 147, 93, 140" href="ex010a.html#terceiro" target="janela" alt="Poligono">
+        </map>
+        <iframe src="ex010a.html" id="janela" name="janela" scrolling="no"></iframe> <!--IFRAME-->
+        <hgroup>
+            <h1>Texto aleatório da internet</h1>
+            <h2>Para exemplificar formatações</h2>
+        </hgroup>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eget nisl, blandit at vitae auctor pretium duis lacus diam. Placerat molestie sit maximus rhoncus pharetra dolor tincidunt dapibus curabitur, consectetur facilisis facilisi nam lacus inceptos leo quisque, sem mauris ultrices commodo in faucibus sagittis a. Mattis feugiat aenean ac porttitor pretium cras cubilia velit molestie, quisque mus class condimentum est iaculis elit scelerisque, ultricies sodales in natoque etiam quam placerat libero. Nunc imperdiet nibh metus per dictumst odio, efficitur ultrices porttitor venenatis luctus, porta tristique vivamus montes class. Aliquam pellentesque lacus eros dignissim, lacinia in fermentum mi suspendisse, ornare sollicitudin egestas.</p>
+    </section>
+    <aside>
+        <h1>Conteúdo lateral</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eget nisl, blandit at vitae auctor pretium duis lacus diam. Placerat molestie sit maximus rhoncus pharetra dolor tincidunt dapibus curabitur, consectetur facilisis facilisi nam lacus inceptos leo quisque, sem mauris ultrices commodo in faucibus sagittis a.</p>
+    </aside>
+    <footer>
+        <h1>&copy; <span>Leandro Cardoso</span></h1>
+    </footer>
+</body>
+</html>
