@@ -1,0 +1,21 @@
+@charset "UTF-8";
+form{
+    width: 100%;
+}
+input:hover, textarea:hover, select:hover{
+    background-color: rgb(209, 209, 209);
+}
+legend{
+    color: darkgray;
+    font-weight: bold;
+}
+fieldset{
+    border-color: rgb(240, 240, 240);
+    margin: 0px;
+    padding: 10px;
+}
+fieldset fieldset{
+    width: 50%;
+    margin: auto;
+    
+}

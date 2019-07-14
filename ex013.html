@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Exercício 013
+    </title>
+    <link rel="stylesheet" type="text/css" href="ex011.css"> <!--PADÃO-->
+    <link rel="stylesheet" type="text/css" href="ex013formulario.css"> <!--FORMULÁRIO CSS-->
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <h1>Menu principal</h1>
+            <ul>
+                <li><a href="ex001.html" target="_blank">Ex 001</a></li>
+                <li><a href="ex002.html" target="_blank">Ex 002</a></li>
+                <li><a href="ex003.html" target="_blank">Ex 003</a></li>
+                <li><a href="ex004.html" target="_blank">Ex 004</a></li>
+                <li><a href="ex005.html" target="_blank">Ex 005</a></li>
+                <li><a href="ex006.html" target="_blank">Ex 006</a></li>
+                <li><a href="ex007.html" target="_blank">Ex 007</a></li>
+                <li><a href="ex008.html" target="_blank">Ex 008</a></li>
+                <li><a href="ex009.html" target="_blank">Ex 009</a></li>
+                <li><a href="ex010.html" target="_blank">Ex 010</a></li>
+                <li><a href="ex011.html" target="_blank">Ex 011</a></li>
+                <li><a href="ex012.html" target="_blank">Ex 012</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Formulário</h1>
+        <form method="POST" action="" oninput="total()"> <!--FORMULÁRIO-->
+            <fieldset> <!--CONJUNTO DE CAMPOS-->
+                <legend>Usuário</legend> <!--LEGENDA-->
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" maxlength="30" placeholder="Nome completo">
+                </p>
+                <p>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" maxlength="6" placeholder="Senha de 6 dígitos">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" maxlength="50" placeholder="E-mail">
+                </p>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <p>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="sexo" id="masculino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="sexo" id="feminino">
+                    </p>
+                </fieldset>
+                <p>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <p>
+                    <label for="logradouro">Logradouro:</label>
+                    <input type="text" id="logradouro" maxlength="100" placeholder="Rua, Av, Estrada...">
+                </p>
+                <p>
+                    <label for="numero">Número:</label>
+                    <input type="number" id="numero" min="0" max="999999">
+                </p>
+                <p>
+                    <label for="estado">Estado:</label>
+                    <select id="estado">
+                        <optgroup label="Região Sudeste">
+                            <option>RJ</option>
+                            <option>SP</option>
+                            <option>MG</option>
+                        </optgroup>
+                        <optgroup label="Região Sul">
+                            <option>PA</option>
+                            <option>SC</option>
+                            <option>RS</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" maxlength="50" list="cidades">
+                    <datalist id="cidades">
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Nova Iguaçu"></option>
+                        <option value="Niterói"></option>
+                        <option value="Belford Roxo"></option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem</legend>
+                <p>
+                    <label for="urgencia">Grau de urgência:</label>
+                    <input type="range" id="urgencia" min="0" max="10">
+                </p>
+                <p>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" cols="80" rows="5" placeholder="Deixe aqui a sua mensagem"></textarea>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Pedido</legend>
+                <p>
+                    <input type="checkbox" id="noticias" checked>
+                    <label for="noticias">Gostaria de receber notícias desse site.</label>
+                </p>
+                <p>
+                    <label for="cor">Cor:</label>
+                    <input type="color" id="cor" value="#0000FF">
+                </p>
+                <p>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" min="0" max="100" value="0">
+                </p>
+                <p>
+                    <label for="preco">Preço total a pagar:</label>
+                    <input type="text" id="preco" readonly placeholder="Valor a pagar">
+                </p>
+            </fieldset>
+            <input type="submit" id="enviar" value="Enviar">
+            <input type="image" id="enviar" value="Enviar" src="imagens/enviar.png">
+        </form>
+    </section>
+    <aside>
+        <h1>Conteúdo lateral</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eget nisl, blandit at vitae auctor pretium duis lacus diam. Placerat molestie sit maximus rhoncus pharetra dolor tincidunt dapibus curabitur, consectetur facilisis facilisi nam lacus inceptos leo quisque, sem mauris ultrices commodo in faucibus sagittis a.</p>
+    </aside>
+    <footer>
+        <h1>&copy; <span>Leandro Cardoso</span></h1>
+    </footer>
+    <!--JAVASCRIPT PARA O FORMULÁRIO-->
+    <script>
+        function total(){
+            var quantidade = document.getElementById('quantidade').value
+            var total = Number(quantidade) * 500
+            document.getElementById('preco').value = `R$ ${total}`
+        }
+    </script>
+</body>
+</html>
