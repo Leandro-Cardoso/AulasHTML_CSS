@@ -13,3 +13,4 @@ Aulas e exercícios de HTML e CSS... Oque mudou no HTML 5 e CSS 3 ?
 09. ex009.html -> Tabelas.
 10. ex010.html -> Iframe e mapa de imagem.
 11. ex011.html -> Album de fotos.
+12. ex012.html -> Multimídia.
