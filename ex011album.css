@@ -1,0 +1,53 @@
+@charset "UTF-8";
+ul#album{
+    width: 100%;
+    list-style: none; /*TIRAR MARCAÇÃO DA LISTA*/
+    margin: 0px;
+    padding: 0px;
+}
+ul#album li{
+    float: left; /*LISTA DA HORIZONTAL*/
+    width: 285px;
+    height: 160px;
+    margin: 5px;
+    padding: 0px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+
+/*LEGENDAS*/
+ul#album li span{
+    opacity: 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 15pt;
+    padding: 10px;
+    line-height: 270px;
+}
+ul#album li:hover span{ /*EFEITO*/
+    opacity: 1;
+    transition: .5s;
+}
+
+/*FOTOS*/
+ul#album li#a{
+    background: url('album/a.jpg') no-repeat;
+    background-size: 100%;
+}
+ul#album li#b{
+    background: url('album/b.jpg') no-repeat;
+    background-size: 100%;
+}
+ul#album li#c{
+    background: url('album/c.jpg') no-repeat;
+    background-size: 100%;
+}
+ul#album li#d{
+    background: url('album/d.jpg') no-repeat;
+    background-size: 100%;
+}
+ul#album li:hover{ /*EFEITO*/
+    -webkit-transform: scale(1.5);
+    -webkit-transition: all .5s ease-in;
+}
